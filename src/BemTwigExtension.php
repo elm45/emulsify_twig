@@ -1,8 +1,10 @@
 <?php
 
 namespace Drupal\emulsify_twig;
-use Drupal\Core\Template\Attribute;
 
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Template\TwigExtension;
+use Twig\TwigFunction;
 /**
  * Class DefaultService
  *
