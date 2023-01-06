@@ -10,7 +10,7 @@ use Twig\TwigFunction;
  *
  * @package Drupal\EmulsifyExt
  */
-class BemTwigExtension extends \Twig_Extension {
+class BemTwigExtension extends TwigExtension {
   /**
    * {@inheritdoc}
    * This function must return the name of the extension. It must be unique.
@@ -24,7 +24,7 @@ class BemTwigExtension extends \Twig_Extension {
    */
   public function getFunctions() {
     return array(
-      new \Twig_SimpleFunction('bem', array($this, 'bem'), array('needs_context' => true, 'is_safe' => array('html'))),
+      new TwigFunction('bem', array($this, 'bem'), array('needs_context' => true, 'is_safe' => array('html'))),
     );
   }
 
